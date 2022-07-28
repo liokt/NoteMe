@@ -11,4 +11,8 @@ import com.example.lio.noteme.feature_note.domain.model.Note
 abstract class NoteDatabase: RoomDatabase() {
 
     abstract val noteDao: NotesDao
+
+    companion object {
+        const val DATABASE_NAME = "notes_db"
+    }
 }
